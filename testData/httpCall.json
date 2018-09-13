@@ -34,7 +34,7 @@
             "signatureUrl": "https://training.api.lab:443/ai/training/rest/v1/level2/ex-ex/2?adata=some+data&aapre=321",
             "httpMethod": "GET",
 
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
 
         "expectedResult": "200 OK"
@@ -52,7 +52,7 @@
             "signatureUrl": "https://training.api.lab:443/ai/training/rest/v1/level2/ex-ex/2?adata=some+data&bdata&aapre=321",
             "httpMethod": "GET",
 
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
 
         "expectedResult": "200 OK"
@@ -71,7 +71,7 @@
             "signatureUrl": "https://training.api.lab:443/ai/training/rest/v1/level2/ex-ex/2?adata=some+data&bdata&aapre=321",
             "httpMethod": "GET",
 
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
 
         "expectedResult": "200 OK"
@@ -96,7 +96,7 @@
                 "ap": "duplicate+name+new"
             },
 
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
 
         "expectedResult": "200 OK"
@@ -136,7 +136,7 @@
                 }
             },
 
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
 
         "expectedResult": "200 OK"
@@ -174,7 +174,7 @@
                 }
             },
 
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
 
         "expectedResult": "200 OK"
