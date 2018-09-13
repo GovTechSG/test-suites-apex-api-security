@@ -4,7 +4,7 @@
         "description" : "VerifyL2Signature - Certificate in PEM format with .cer extension",
 
         "message" : "message",
-        "publicCertFileName" : "../cert/alpha/training.alpha.apex.lab.public.Cer",
+        "publicCertFileName" : "cert/alpha/training.alpha.apex.lab.public.Cer",
         "apiParam" : {
             "signature" : "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },
@@ -16,7 +16,7 @@
         "description" : "VerifyL2Signature - Certificate in PEM format with .pem extension",
 
         "message" : "message",
-        "publicCertFileName" : "../cert/alpha/training.alpha.apex.lab.public.pem",
+        "publicCertFileName" : "cert/alpha/training.alpha.apex.lab.public.pem",
         "apiParam" : {
             "signature" : "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },
@@ -28,7 +28,7 @@
         "description" : "VerifyL2Signature - Public Key in PEM format with .key extension",
 
         "message" : "message",
-        "publicCertFileName" : "../cert/alpha/training.alpha.apex.lab.public.Key",
+        "publicCertFileName" : "cert/alpha/training.alpha.apex.lab.public.Key",
         "apiParam" : {
             "signature" : "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },
@@ -40,7 +40,7 @@
         "description" : "VerifyL2Signature - Public Certificate in DER format with .cer extension",
 
         "message" : "message",
-        "publicCertFileName" : "../cert/alpha/training.alpha.apex.lab.cer",
+        "publicCertFileName" : "cert/alpha/training.alpha.apex.lab.cer",
         "apiParam" : {
             "signature" : "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },

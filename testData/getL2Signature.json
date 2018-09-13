@@ -5,7 +5,7 @@
 
         "message" : "message",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
 
         "testTag" : true,
@@ -17,7 +17,7 @@
 
         "message" : "message",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase" : "passwordkey"
         },
 
@@ -30,7 +30,7 @@
 
         "message" : null,
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
 
         "testTag" : true,
@@ -43,7 +43,7 @@
 
         "message" : "",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
 
         "testTag" : true,
@@ -56,7 +56,7 @@
 
         "message" : "Lorem ipsum dolor sit amet, vel nihil senserit ei. Ne quo erat feugait disputationi.",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase" : "passwordkey"
         },
 
@@ -68,7 +68,7 @@
 
         "message" : "道続万汁国圭絶題手事足物目族月会済。",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase" : "passwordkey"
         },
 
@@ -80,7 +80,7 @@
 
         "message" : "員ちぞど移点お告周ひょ球独狙チウソノ法保断フヒシハ東5広みぶめい質創ごぴ採8踊表述因仁らトつ。",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase" : "passwordkey"
         },
 
@@ -92,7 +92,7 @@
 
         "message" : "대통령은 즉시 이를 공포하여야 한다, 그 자율적 활동과 발전을 보장한다.",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase" : "passwordkey"
         },
 
@@ -104,7 +104,7 @@
 
         "message" : "Λορεμ ιπσθμ δολορ σιτ αμετ, τατιον ινιμιcθσ τε ηασ, ιν εαμ μοδο ποσσιμ ινvιδθντ.",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase" : "passwordkey"
         },
 
@@ -116,7 +116,7 @@
 
         "message" : "GET&https://test.example.com/api/v1/rest/level1/in-in/&auth_prefix_app_id=app-id-lpX54CVNltS0ye03v2mQc0b&auth_prefix_nonce=-4985265956715077053&auth_prefix_signature_method=HMACSHA256&auth_prefix_timestamp=1502159855341&auth_prefix_version=1.0&param1=def+123",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase" : "passwordkey"
         },
 
@@ -128,7 +128,7 @@
 
         "message" : "GET&https://test.example.com/api/v1/rest/level1/in-in/&ap=裕廊坊 心邻坊&auth_prefix_app_id=app-id-lpX54CVNltS0ye03v2mQc0b&auth_prefix_nonce=2851111144329605674&auth_prefix_signature_method=HMACSHA256&auth_prefix_timestamp=1502163903712&auth_prefix_version=1.0",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase" : "passwordkey"
         },
 
@@ -142,7 +142,7 @@
 
         "message" : "message",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.nopass.pem",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
             "passphrase" : "invalidPassphrase"
         },
 
@@ -160,7 +160,7 @@
         "message" : "message",
 
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase" : "wrongPassphrase"
         },
         "testTag" : true,
@@ -176,15 +176,15 @@
 
         "message" : "message",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/invalidFileName.pem",
+            "privateCertFileName": "cert/alpha/invalidFileName.pem",
             "passphrase" : "passphrase"
         },
 
         "testTag" : true,
         "errorTest" : true,
         "expectedResult" : {
-            "golang" : "open ../cert/alpha/invalidFileName.pem: no such file or directory",
-            "nodejs" : "ENOENT: no such file or directory, open 'spec/cert/alpha/invalidFileName.pem'"
+            "golang" : "open cert/alpha/invalidFileName.pem: no such file or directory",
+            "nodejs" : "ENOENT: no such file or directory, open 'node_modules/test-suites-apex-api-security/cert/alpha/invalidFileName.pem'"
         }
     },
     {
@@ -193,14 +193,14 @@
 
         "message" : "message",
         "apiParam" : {
-            "privateCertFileName": "../cert/alpha/training.alpha.apex.lab.public.pem",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.public.pem",
             "passphrase" : "passphrase"
         },
 
         "testTag" : true,
         "errorTest" : true,
         "expectedResult" : {
-            "golang" : "failed to get private key from ../cert/alpha/training.alpha.apex.lab.public.pem",
+            "golang" : "failed to get private key from cert/alpha/training.alpha.apex.lab.public.pem",
             "nodejs" : "error:0906D06C:PEM routines:PEM_read_bio:no start line"
         }
     }
