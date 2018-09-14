@@ -64,7 +64,7 @@
     },
     {
         "id" : "5",
-        "description" : "getHMACSignature - message is utf8(Chinese Traditional)",
+        "description" : "getRSASignature - message is utf8(Chinese Traditional)",
 
         "message" : "道続万汁国圭絶題手事足物目族月会済。",
         "apiParam" : {
@@ -76,7 +76,7 @@
     },
     {
         "id" : "6",
-        "description" : "getHMACSignature - message is utf8(Japanese)",
+        "description" : "getRSASignature - message is utf8(Japanese)",
 
         "message" : "員ちぞど移点お告周ひょ球独狙チウソノ法保断フヒシハ東5広みぶめい質創ごぴ採8踊表述因仁らトつ。",
         "apiParam" : {
@@ -88,7 +88,7 @@
     },
     {
         "id" : "7",
-        "description" : "getHMACSignature - message is utf8(Korean)",
+        "description" : "getRSASignature - message is utf8(Korean)",
 
         "message" : "대통령은 즉시 이를 공포하여야 한다, 그 자율적 활동과 발전을 보장한다.",
         "apiParam" : {
@@ -100,7 +100,7 @@
     },
     {
         "id" : "8",
-        "description" : "getHMACSignature - message is utf8(Greek)",
+        "description" : "getRSASignature - message is utf8(Greek)",
 
         "message" : "Λορεμ ιπσθμ δολορ σιτ αμετ, τατιον ινιμιcθσ τε ηασ, ιν εαμ μοδο ποσσιμ ινvιδθντ.",
         "apiParam" : {
@@ -112,7 +112,7 @@
     },
     {
         "id" : "9",
-        "description" : "getHMACSignature - L1 BaseString",
+        "description" : "getRSASignature - L2 BaseString",
 
         "message" : "GET&https://test.example.com/api/v1/rest/level1/in-in/&auth_prefix_app_id=app-id-lpX54CVNltS0ye03v2mQc0b&auth_prefix_nonce=-4985265956715077053&auth_prefix_signature_method=HMACSHA256&auth_prefix_timestamp=1502159855341&auth_prefix_version=1.0&param1=def+123",
         "apiParam" : {
@@ -124,7 +124,7 @@
     },
     {
         "id" : "10",
-        "description" : "getHMACSignature - L1 BaseString with UTF8 Parameters",
+        "description" : "getRSASignature - L2 BaseString with UTF8 Parameters",
 
         "message" : "GET&https://test.example.com/api/v1/rest/level1/in-in/&ap=裕廊坊 心邻坊&auth_prefix_app_id=app-id-lpX54CVNltS0ye03v2mQc0b&auth_prefix_nonce=2851111144329605674&auth_prefix_signature_method=HMACSHA256&auth_prefix_timestamp=1502163903712&auth_prefix_version=1.0",
         "apiParam" : {
