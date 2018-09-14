@@ -3,7 +3,7 @@
         "description": "HTTPCall - Baseline L1",
 
         "apiParam": {
-            "realm": "golang.l1.test",
+            "realm": "apex.l1.test",
             "authPrefix": "Apex_l1_eg",
 
             "appId": "training-3O9HWXNyVT0701KyJIZte787",
@@ -14,7 +14,7 @@
             "httpMethod": "GET",
 
             "queryString": {
-                "clientname": "golang.l1.test.client"
+                "clientname": "apex.l1.test.client"
             }
         },
 
@@ -26,7 +26,7 @@
 
         "apiParam": {
             "authPrefix": "Apex_l2_eg",
-            "realm": "golang.l2.test",
+            "realm": "apex.l2.test",
 
             "appId": "training-3O9HWXNyVT0701KyJIZte787",
 
@@ -44,7 +44,7 @@
         "description": "HTTPCall - URL QueryString with empty value",
 
         "apiParam": {
-            "realm": "golang.l2.test",
+            "realm": "apex.l2.test",
             "appId": "training-3O9HWXNyVT0701KyJIZte787",
 
             "authPrefix": "Apex_l2_eg",
@@ -62,7 +62,7 @@
         "description": "HTTPCall - Duplicate name in QueryString (URL) Test 01",
 
         "apiParam": {
-            "realm": "golang.l2.test",
+            "realm": "apex.l2.test",
             "authPrefix": "Apex_l2_eg",
 
             "appId": "training-3O9HWXNyVT0701KyJIZte787",
@@ -81,7 +81,7 @@
         "description": "HTTPCall - Multiple name in QueryString Test 02",
 
         "apiParam": {
-            "realm": "golang.l2.test",
+            "realm": "apex.l2.test",
             "authPrefix": "Apex_l2_eg",
 
             "appId": "training-3O9HWXNyVT0701KyJIZte787",
@@ -107,7 +107,7 @@
         "apiName": "[FT] Helloworld REST L2 External-External",
 
         "apiParam": {
-            "realm": "golang.l2.test",
+            "realm": "apex.l2.test",
             "authPrefix": "Apex_l2_eg",
             "appId": "training-3O9HWXNyVT0701KyJIZte787",
 
@@ -147,7 +147,7 @@
         "apiName": "[FT] Helloworld REST L2 External-External",
 
         "apiParam": {
-            "realm": "golang.l2.test",
+            "realm": "apex.l2.test",
             "authPrefix": "Apex_l2_eg",
             "appId": "training-3O9HWXNyVT0701KyJIZte787",
 
