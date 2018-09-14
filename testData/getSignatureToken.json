@@ -205,5 +205,15 @@
         },
 
         "expectedResult": "Apex_l2_eg realm=\"golang.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"%s\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"%s\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"%s\""
+    },
+    {
+        "id": "10",
+        "description": "getSignatureToken - Required parameteres authPrefix, appId, urlPath and httpMethod is missing",
+
+        "apiParam" : {
+        },
+
+        "errorTest" : true,
+        "expectedResult": "One or more required parameters are missing!"
     }
 ]
