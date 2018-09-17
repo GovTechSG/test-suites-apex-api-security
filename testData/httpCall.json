@@ -17,8 +17,9 @@
                 "clientname": "apex.l1.test.client"
             }
         },
-
-        "expectedResult": "200 OK"
+        "expectedResult" : {
+            "default": "200 OK"
+        }
     },
     {
         "id": "2",
@@ -36,8 +37,9 @@
 
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
-
-        "expectedResult": "200 OK"
+        "expectedResult" : {
+            "default": "200 OK"
+        }
     },
     {
         "id": "3",
@@ -54,8 +56,9 @@
 
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
-
-        "expectedResult": "200 OK"
+        "expectedResult" : {
+            "default": "200 OK"
+        }
     },
     {
         "id": "4",
@@ -73,8 +76,9 @@
 
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
-
-        "expectedResult": "200 OK"
+        "expectedResult" : {
+            "default": "200 OK"
+        }
     },
     {
         "id": "5",
@@ -98,8 +102,9 @@
 
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
-
-        "expectedResult": "200 OK"
+        "expectedResult" : {
+            "default": "200 OK"
+        }
     },
     {
         "id": "6",
@@ -138,8 +143,9 @@
 
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
-
-        "expectedResult": "200 OK"
+        "expectedResult" : {
+            "default": "200 OK"
+        }
     },
     {
         "id": "7",
@@ -176,7 +182,8 @@
 
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
-
-        "expectedResult": "200 OK"
+        "expectedResult" : {
+            "default": "200 OK"
+        }
     }
 ]

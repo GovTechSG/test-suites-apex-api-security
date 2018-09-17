@@ -7,8 +7,9 @@
         "apiParam" : {
             "secret" : "secret"
         },
-
-        "expectedResult" : "i19IcCmVwVmMVz2x4hhmqbgl1KeU0WnXBgoDYFeWNgs="
+        "expectedResult" : {
+            "default": "i19IcCmVwVmMVz2x4hhmqbgl1KeU0WnXBgoDYFeWNgs="
+        }
     },
     {
         "id" : "2",
@@ -20,7 +21,9 @@
         },
 
         "skipTest" : ["c#", "java", "golang", "nodejs"],
-        "expectedResult" : "+eZuF5tnR65UEI+C+K3os8Jddv0wr95sOVgixTAZYWk="
+        "expectedResult" : {
+            "default": "+eZuF5tnR65UEI+C+K3os8Jddv0wr95sOVgixTAZYWk="
+        }
     },
     {
         "id" : "2.1",
@@ -32,7 +35,9 @@
         },
 
         "errorTest" : true,
-        "expectedResult" : "message and secret must not be null or empty!"
+        "expectedResult" : {
+            "default": "message and secret must not be null or empty!"
+        }
     },
     {
         "id" : "2.2",
@@ -44,7 +49,9 @@
         },
 
         "errorTest" : true,
-        "expectedResult" : "message and secret must not be null or empty!"
+        "expectedResult" : {
+            "default": "message and secret must not be null or empty!"
+        }
     },
     {
         "id" : "3",
@@ -56,7 +63,9 @@
         },
 
         "skipTest" : ["c#", "java", "golang", "nodejs"],
-        "expectedResult" : "thNnmggU2ex3L5XXeMNfxf8Wl8STcVZTxscSFEKSxa0="
+        "expectedResult" : {
+            "default": "thNnmggU2ex3L5XXeMNfxf8Wl8STcVZTxscSFEKSxa0="
+        }
     },
     {
         "id" : "3.1",
@@ -68,7 +77,9 @@
         },
 
         "errorTest" : true,
-        "expectedResult" : "message and secret must not be null or empty!"
+        "expectedResult" : {
+            "default": "message and secret must not be null or empty!"
+        }
     },
     {
         "id" : "3.2",
@@ -80,7 +91,9 @@
         },
 
         "errorTest" : true,
-        "expectedResult" : "message and secret must not be null or empty!"
+        "expectedResult" : {
+            "default": "message and secret must not be null or empty!"
+        }
     },
     {
         "id" : "4",
@@ -90,8 +103,9 @@
         "apiParam" : {
             "secret" : "secret"
         },
-
-        "expectedResult" : "cL3lY5/rhmkxMw/dCHCa4b9Lpp/soPPACnIxtQwRQI8="
+        "expectedResult" : {
+            "default": "cL3lY5/rhmkxMw/dCHCa4b9Lpp/soPPACnIxtQwRQI8="
+        }
     },
     {
         "id" : "5",
@@ -101,8 +115,9 @@
         "apiParam" : {
             "secret" : "secret"
         },
-
-        "expectedResult" : "wOHv68zuoiIjfJHW0hZcOk4lORyiAL/IGK8WSkBUnuk="
+        "expectedResult" : {
+            "default": "wOHv68zuoiIjfJHW0hZcOk4lORyiAL/IGK8WSkBUnuk="
+        }
     },
     {
         "id" : "6",
@@ -112,8 +127,9 @@
         "apiParam" : {
             "secret" : "secret"
         },
-
-        "expectedResult" : "L0ft4O8R2hxpupJVkLbgQpW0+HRw3KDgNUNf9DAEY7Y="
+        "expectedResult" : {
+            "default": "L0ft4O8R2hxpupJVkLbgQpW0+HRw3KDgNUNf9DAEY7Y="
+        }
     },
     {
         "id" : "7",
@@ -123,8 +139,9 @@
         "apiParam" : {
             "secret" : "secret"
         },
-
-        "expectedResult" : "a6qt0t/nQ3GQFAEVTH+LMvEi0D41ZaKqC7LWJcVmHlE="
+        "expectedResult" : {
+            "default": "a6qt0t/nQ3GQFAEVTH+LMvEi0D41ZaKqC7LWJcVmHlE="
+        }
     },
     {
         "id" : "8",
@@ -134,8 +151,9 @@
         "apiParam" : {
             "secret" : "secret"
         },
-
-        "expectedResult" : "WUGjbeO8Jy8Rvs5tD2biLHPR0+qtAmXeZKqX6acYL/4="
+        "expectedResult" : {
+            "default": "WUGjbeO8Jy8Rvs5tD2biLHPR0+qtAmXeZKqX6acYL/4="
+        }
     },
     {
         "id" : "9",
@@ -145,8 +163,9 @@
         "apiParam" : {
             "secret" : "5aes9wG4mQgWJBfKMuYLtrEtNslm1enWG2XpGaMk"
         },
-
-        "expectedResult" : "8NxfLG0pFWEq1gZEttCW4lgrb92MFaqQpeUPRDx4CAE="
+        "expectedResult" : {
+            "default": "8NxfLG0pFWEq1gZEttCW4lgrb92MFaqQpeUPRDx4CAE="
+        }
     },
     {
         "id" : "10",
@@ -156,7 +175,8 @@
         "apiParam" : {
             "secret" : "5aes9wG4mQgWJBfKMuYLtrEtNslm1enWG2XpGaMk"
         },
-
-        "expectedResult" : "0fE74Vf/Q7nktxeezzrYcvOeq36Pd4CJ7Ez9I00cdJk="
+        "expectedResult" : {
+            "default": "0fE74Vf/Q7nktxeezzrYcvOeq36Pd4CJ7Ez9I00cdJk="
+        }
     }
 ]

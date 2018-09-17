@@ -8,8 +8,9 @@
             "secret" : "secret",
             "signature" : "i19IcCmVwVmMVz2x4hhmqbgl1KeU0WnXBgoDYFeWNgs="
         },
-
-        "expectedResult" : "true"
+        "expectedResult" : {
+            "default": "true"
+        }
     },
     {
         "id" : "2",
@@ -20,8 +21,9 @@
             "secret" : "secretX",
             "signature" : "i19IcCmVwVmMVz2x4hhmqbgl1KeU0WnXBgoDYFeWNgs="
         },
-
-        "expectedResult" : "false"
+        "expectedResult" : {
+            "default": "false"
+        }
     },
     {
         "id" : "3",
@@ -32,8 +34,9 @@
             "secret" : "secret",
             "signature" : "i19IcCmVwVmMVz2x4hhmqbgl1KeU0WnXBgoDYFeWNgs="
         },
-
-        "expectedResult" : "false"
+        "expectedResult" : {
+            "default": "false"
+        }
     },
     {
         "id" : "4",
@@ -44,7 +47,8 @@
             "secret" : "secret",
             "signature" : "i19IcCmVwVmMVz2x4hhmqbgl1KeU0WnXBgoDYFeWNgs=X"
         },
-
-        "expectedResult" : "false"
+        "expectedResult" : {
+            "default": "false"
+        }
     }
 ]
