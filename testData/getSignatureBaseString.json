@@ -14,8 +14,9 @@
             "signatureUrl": "https://training.api.lab:443/ai/training/rest/v1/level2/ex-ex/1?param1=x&param2&param3=m",
             "httpMethod": "POST"
         },
-
-        "expectedResult": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex/1&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=x&param2&param3=m"
+        "expectedResult" : {
+            "default": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex/1&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=x&param2&param3=m"
+        }
     },
     {
         "id": "2",
@@ -32,8 +33,9 @@
             "signatureUrl": "https://training.api.lab:443/ai/training/rest/v1/level2/ex-ex/1?param1=x&param2=&param3=m",
             "httpMethod": "POST"
         },
-
-        "expectedResult": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex/1&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=x&param2&param3=m"
+        "expectedResult" : {
+            "default": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex/1&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=x&param2&param3=m"
+        }
     },
     {
         "id": "3",
@@ -52,8 +54,9 @@
 
             "queryString" : { "param1" : "x", "param2" : "", "param3" : null }
         },
-
-        "expectedResult": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=x&param2&param3"
+        "expectedResult" : {
+            "default": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=x&param2&param3"
+        }
     },
     {
         "id": "4",
@@ -70,8 +73,9 @@
             "signatureUrl": "https://training.api.lab:443/ai/training/rest/v1/level2/ex-ex?param1=value1x&param1=value1m",
             "httpMethod": "POST"
         },
-
-        "expectedResult": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=value1m&param1=value1x"
+        "expectedResult" : {
+            "default": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=value1m&param1=value1x"
+        }
     },
     {
         "id": "5",
@@ -90,8 +94,9 @@
 
             "queryString" : { "param1x" : [ "value1x", "value1m" ], "param2x" : "value2b" }
         },
-
-        "expectedResult": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1x=value1m&param1x=value1x&param2x=value2b"
+        "expectedResult" : {
+            "default": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1x=value1m&param1x=value1x&param2x=value2b"
+        }
     },
     {
         "id": "6",
@@ -110,10 +115,11 @@
 
             "queryString" : { "param1h" : false, "param1o" : true, "param1a" : 899, "param1c" : [ "value1cz", "value1cf"], "jasonObject" : { "objectParam1" : "oParam1c", "objectParam2" : "oParam2b" } }
         },
-
-        "expectedResult": {
+        "expectedResult" : {
+            "default": "",
             "golang" : "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&jasonObject&param1a=899.000000&param1c=value1cf&param1c=value1cz&param1h=false&param1o=true",
             "nodejs" : "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&jasonObject&param1a=899&param1c=value1cf&param1c=value1cz&param1h=false&param1o=true"
+
         }
     },
     {
@@ -133,8 +139,9 @@
 
             "queryString" : { "value1" : [ "value1x", "value1m" ], "param2" : "value2b" }
         },
-
-        "expectedResult": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=value1&param2=value2&param2=value2b&value1=value1m&value1=value1x"
+        "expectedResult" : {
+            "default": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=value1&param2=value2&param2=value2b&value1=value1m&value1=value1x"
+        }
     },
     {
         "id": "8",
@@ -154,10 +161,11 @@
             "queryString" : { "param1h" : false, "param1o" : true, "param1a" : 899, "param1c" : [ "value1cz", "value1cf" ], "jasonObjectA" : { "objectParam1" : "oParam1c", "objectParam2" : "oParam2b" } },
             "formData" : { "param1h" : false, "param1o" : true, "param1a" : 899, "param1c" : [ "value1cz", "value1cf", 123, true ], "jasonObjectB" : { "objectParam1" : "oParam1c", "objectParam2" : "oParam2b" } }
         },
-
-        "expectedResult": {
+        "expectedResult" : {
+            "default": "",
             "golang" : "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&jasonObjectA&jasonObjectB&param1a=899.000000&param1a=899.000000&param1c=123.000000&param1c=true&param1c=value1cf&param1c=value1cf&param1c=value1cz&param1c=value1cz&param1h=false&param1h=false&param1o=true&param1o=true",
             "nodejs" : "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&jasonObjectA&jasonObjectB&param1a=899&param1a=899&param1c=123&param1c=true&param1c=value1cf&param1c=value1cf&param1c=value1cz&param1c=value1cz&param1h=false&param1h=false&param1o=true&param1o=true"
+
         }
     },
     {
@@ -177,7 +185,8 @@
 
             "queryString" : { "MessageBody" : [ "value1x", "value1m" ], "Action" : "SendMessage" }
         },
-
-        "expectedResult": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&Action=SendMessage&MessageBody=value1m&MessageBody=value1x&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=value1&param2=value2"
+        "expectedResult" : {
+            "default": "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&Action=SendMessage&MessageBody=value1m&MessageBody=value1x&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=value1&param2=value2"
+        }
     }
 ]
