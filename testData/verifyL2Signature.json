@@ -36,7 +36,8 @@
         },
         "expectedResult" : {
             "default": "true"
-        }
+        },
+        "skipTest" : ["c#"]
     },
     {
         "id" : "4",
