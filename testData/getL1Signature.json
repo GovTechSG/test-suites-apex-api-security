@@ -36,7 +36,8 @@
 
         "errorTest" : true,
         "expectedResult" : {
-            "default": "message and secret must not be null or empty!"
+            "default": "message and secret must not be null or empty!",
+            "java": "baseString must not be null or empty."
         }
     },
     {
@@ -50,7 +51,8 @@
 
         "errorTest" : true,
         "expectedResult" : {
-            "default": "message and secret must not be null or empty!"
+            "default": "message and secret must not be null or empty!",
+            "java": "baseString must not be null or empty."
         }
     },
     {
@@ -78,7 +80,8 @@
 
         "errorTest" : true,
         "expectedResult" : {
-            "default": "message and secret must not be null or empty!"
+            "default": "message and secret must not be null or empty!",
+            "java": "secret must not be null or empty."
         }
     },
     {
@@ -92,7 +95,8 @@
 
         "errorTest" : true,
         "expectedResult" : {
-            "default": "message and secret must not be null or empty!"
+            "default": "message and secret must not be null or empty!",
+            "java": "secret must not be null or empty."
         }
     },
     {
