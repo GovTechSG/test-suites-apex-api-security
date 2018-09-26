@@ -40,7 +40,8 @@
         "testTag" : true,
         "errorTest" : true,
         "expectedResult" : {
-            "default": "message and privateKey must not be null or empty"
+            "default": "message and privateKey must not be null or empty",
+            "java": "baseString must not be null or empty."
         }
     },
     {
@@ -55,7 +56,8 @@
         "testTag" : true,
         "errorTest" : true,
         "expectedResult" : {
-            "default": "message and privateKey must not be null or empty"
+            "default": "message and privateKey must not be null or empty",
+            "java": "baseString must not be null or empty."
         }
     },
     {
@@ -163,7 +165,7 @@
 
         "testTag" : true,
         "errorTest" : true,
-        "skipTest" : [ "nodejs" ],
+        "skipTest" : [ "nodejs","java" ],
         "expectedResult" : {
             "default": "",
             "golang" : "x509: no DEK-Info header in block"
@@ -184,7 +186,8 @@
         "expectedResult" : {
             "default": "",
             "golang" : "x509: decryption password incorrect",
-            "nodejs" : "error:06065064:digital envelope routines:EVP_DecryptFinal_ex:bad decrypt"
+            "nodejs" : "error:06065064:digital envelope routines:EVP_DecryptFinal_ex:bad decrypt",
+            "java" : "exception using cipher - please check password and data."
 
         }
     },
@@ -203,7 +206,8 @@
         "expectedResult" : {
             "default": "",
             "golang" : "open ../../github.com/GovTechSG/test-suites-apex-api-security/cert/alpha/invalidFileName.pem: no such file or directory",
-            "nodejs" : "ENOENT: no such file or directory, open 'node_modules/test-suites-apex-api-security/cert/alpha/invalidFileName.pem'"
+            "nodejs" : "ENOENT: no such file or directory, open 'node_modules/test-suites-apex-api-security/cert/alpha/invalidFileName.pem'",
+            "java" : "src/main/resources/test-suites/cert/alpha/invalidFileName.pem (No such file or directory)"
 
         }
     },
@@ -222,7 +226,8 @@
         "expectedResult" : {
             "default": "",
             "golang" : "failed to get private key from ../../github.com/GovTechSG/test-suites-apex-api-security/cert/alpha/training.alpha.apex.lab.public.pem",
-            "nodejs" : "error:0906D06C:PEM routines:PEM_read_bio:no start line"
+            "nodejs" : "error:0906D06C:PEM routines:PEM_read_bio:no start line",
+            "java" : "org.bouncycastle.cert.X509CertificateHolder cannot be cast to org.bouncycastle.openssl.PEMKeyPair"
             
         }
     }
