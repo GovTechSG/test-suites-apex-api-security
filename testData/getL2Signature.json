@@ -205,7 +205,7 @@
         "errorTest" : true,
         "expectedResult" : {
             "default": "",
-            "golang" : " Unable to open file invalidFileName.pem",
+            "golang" : "Unable to open file invalidFileName.pem",
             "nodejs" : "ENOENT: no such file or directory, open 'node_modules/test-suites-apex-api-security/cert/alpha/invalidFileName.pem'",
             "java" : "src/main/resources/test-suites/cert/alpha/invalidFileName.pem (No such file or directory)"
 
