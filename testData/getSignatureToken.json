@@ -227,5 +227,26 @@
             "default": "One or more required parameters are missing!",
             "java": "Invalid Authorization Prefix."
         }
+    },
+    {
+        "id": "11",
+        "description": "getSignatureToken - QueryString (URL) with emoji",
+
+        "apiParam" : {
+            "realm": "http://example.api.test/token",
+            "authPrefix": "Apex_l1_eg",
+            "appId": "training-4cz5dacnCsE4IXELymgoyMAA",
+			"secret" : "fa2421735cc277d34b39e3cd51606a848fafc786",
+            "invokeUrl": "https://training.api.lab:443/ai/training/rest/v1/httpbin/etag/chat?emoticon=😋",
+            "signatureUrl": "https://training.api.lab:443/ai/training/rest/v1/httpbin/etag/chat?emoticon=😋",
+            "httpMethod": "GET",
+
+            "timestamp" : "1547520492479",
+            "nonce" : "xz9WBJXRLSzrcW1lwUq6jovFsfUtPBHSKoYxEhibEQU="
+
+        },
+        "expectedResult" : {
+            "default": "Apex_l1_eg realm=\"http://example.api.test/token\", apex_l1_eg_app_id=\"training-4cz5dacnCsE4IXELymgoyMAA\", apex_l1_eg_nonce=\"xz9WBJXRLSzrcW1lwUq6jovFsfUtPBHSKoYxEhibEQU=\", apex_l1_eg_signature_method=\"HMACSHA256\", apex_l1_eg_timestamp=\"1547520492479\", apex_l1_eg_version=\"1.0\", apex_l1_eg_signature=\"KiWF32zvikBc4ND7Sxm95t9pfxl3WDQMgXXRWgv7S+0=\""
+        }
     }
 ]
