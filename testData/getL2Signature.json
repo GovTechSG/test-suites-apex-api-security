@@ -189,7 +189,8 @@
             "default": "",
             "golang" : "x509: decryption password incorrect",
             "nodejs" : "error:06065064:digital envelope routines:EVP_DecryptFinal_ex:bad decrypt",
-            "java" : "exception using cipher - please check password and data."
+            "java" : "exception using cipher - please check password and data.",
+            "c#" : "pad block corrupted"
 
         }
     },
