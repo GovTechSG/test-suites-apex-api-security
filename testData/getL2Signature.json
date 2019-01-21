@@ -224,14 +224,14 @@
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.public.pem",
             "passphrase" : "passphrase"
         },
-
         "testTag" : true,
         "errorTest" : true,
         "expectedResult" : {
             "default": "",
             "golang" : "Unable to read private key from training.alpha.apex.lab.public.pem",
             "nodejs" : "error:0906D06C:PEM routines:PEM_read_bio:no start line",
-            "java" : "org.bouncycastle.cert.X509CertificateHolder cannot be cast to org.bouncycastle.openssl.PEMKeyPair"
+            "java" : "org.bouncycastle.cert.X509CertificateHolder cannot be cast to org.bouncycastle.openssl.PEMKeyPair",
+            "c#" : "Specified cast is not valid."
             
         }
     }
