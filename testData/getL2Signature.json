@@ -206,6 +206,7 @@
 
         "testTag" : true,
         "errorTest" : true,
+        "skipTest" : [ "c#" ],
         "expectedResult" : {
             "default": "",
             "golang" : "Unable to open file invalidFileName.pem",
