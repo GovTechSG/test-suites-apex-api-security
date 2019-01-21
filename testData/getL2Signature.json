@@ -42,7 +42,7 @@
         "expectedResult" : {
             "default": "message and privateKey must not be null or empty",
             "java": "baseString must not be null or empty.",
-            "c#": "String reference not set to an instance of a String.\nParameter name: s"
+            "c#": "Value cannot be null.\nParameter name: message"
         }
     },
     {
@@ -59,7 +59,7 @@
         "expectedResult" : {
             "default": "message and privateKey must not be null or empty",
             "java": "baseString must not be null or empty.",
-            "c#": "String reference not set to an instance of a String.\nParameter name: s"
+            "c#": "Value cannot be null.\nParameter name: message"
         }
     },
     {
