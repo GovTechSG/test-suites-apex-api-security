@@ -226,6 +226,7 @@
 
         "testTag" : true,
         "errorTest" : true,
+        "skipTest" : [ "c#" ],
         "expectedResult" : {
             "default": "",
             "golang" : "Unable to read private key from training.alpha.apex.lab.public.pem",
