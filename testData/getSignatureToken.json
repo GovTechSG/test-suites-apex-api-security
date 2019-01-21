@@ -242,7 +242,7 @@
         "expectedResult" : {
             "default": "One or more required parameters are missing!",
             "java": "Invalid Authorization Prefix.",
-	    "c#": "Value cannot be null."
+	    "c#": "Value cannot be null.\nParameter name: authPrefix"
         }
     },
     {
