@@ -42,7 +42,9 @@
             "timestamp" : "1536650955984",
             "nonce" : "iypPgHH6z78Mu3GloCA=",
 
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
+	    "privateCertFileNameP12": "cert/alpha/training.alpha.apex.lab.p12",
+	    "passphrase": "p12password"
         },
         "expectedResult" : {
             "default": "Apex_l2_eg realm=\"apex.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"iypPgHH6z78Mu3GloCA=\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"1536650955984\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"UepyElrcnJLnF6hy5v+dnMv9a7ctoVD1OB81r09VafZosOKLpyCwB/aeonZ5qlvq43hvt56Bws7rJgRaTmpamdJQ/nn1t/gNii8CIvcLiwoITnwVFar5wxJcUGDyN8N9RUm7uy9mur8Es+vaHsxz6OvJ3QnZHe+pFq5xPRmiMFzTMr4AICXofTW1E7Z8dnMz4/tEN3kKTSjEYvQ85QuwYN5eFwuErkkZhkZCx/iR4Ify9gRo2moEvbbZJ1q5niVUWrO504Q+QX+Uq9Dy7gAvKgmEZCx8CXni3eiHmQh6ShWGIY/7Jsw3wwEHzWkrDidCAzS2zp8aYehWijFDtisqUg==\""
@@ -64,7 +66,9 @@
             "timestamp" : "1536650955984",
             "nonce" : "iypPgHH6z78Mu3GloCA=",
             
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
+	    "privateCertFileNameP12": "cert/alpha/training.alpha.apex.lab.p12",
+	    "passphrase": "p12password"
         },
         "expectedResult" : {
             "default": "Apex_l2_eg realm=\"apex.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"iypPgHH6z78Mu3GloCA=\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"1536650955984\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"cuwR9CJV6RxqNSh3OYS3gNKIeDqJ6K6F3WXAMio67gliggXl9pUsGKaK5q3q+bVfv/sICm1a4zjYtme3pGVS02ie1Klwo5P4d3HeI0qAdXMV4DQmjk6sBaFzkilisC3L/wexHPk4TxuXtpW+0P3fNp2IEDzLqzTmBf+O7xQ7q+31/PuyxvvZh1CnNMfj/uE2OIzrYBg7GSCslOiHZsnYmCo5slXEGCyYJgalJ4SmG7mJT3LYceflIDPnXMrBm3UmDPRrG62YUq9ZOtwkh2ohhTIwpYpGn9zz/0t3x7CWlawZymB+nq/8mLNaj75bRejhGAmi75Av6H2Bq4Jn/YxgKA==\""
@@ -86,7 +90,9 @@
             "timestamp" : "1536650955984",
             "nonce" : "iypPgHH6z78Mu3GloCA=",
 
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
+	    "privateCertFileNameP12": "cert/alpha/training.alpha.apex.lab.p12",
+	    "passphrase": "p12password"
         },
         "expectedResult" : {
             "default": "Apex_l2_eg realm=\"apex.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"iypPgHH6z78Mu3GloCA=\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"1536650955984\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"cuwR9CJV6RxqNSh3OYS3gNKIeDqJ6K6F3WXAMio67gliggXl9pUsGKaK5q3q+bVfv/sICm1a4zjYtme3pGVS02ie1Klwo5P4d3HeI0qAdXMV4DQmjk6sBaFzkilisC3L/wexHPk4TxuXtpW+0P3fNp2IEDzLqzTmBf+O7xQ7q+31/PuyxvvZh1CnNMfj/uE2OIzrYBg7GSCslOiHZsnYmCo5slXEGCyYJgalJ4SmG7mJT3LYceflIDPnXMrBm3UmDPRrG62YUq9ZOtwkh2ohhTIwpYpGn9zz/0t3x7CWlawZymB+nq/8mLNaj75bRejhGAmi75Av6H2Bq4Jn/YxgKA==\""
@@ -114,7 +120,9 @@
             "timestamp" : "1536650955984",
             "nonce" : "iypPgHH6z78Mu3GloCA=",
 
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
+	    "privateCertFileNameP12": "cert/alpha/training.alpha.apex.lab.p12",
+	    "passphrase": "p12password"
         },
         "expectedResult" : {
             "default": "Apex_l2_eg realm=\"apex.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"iypPgHH6z78Mu3GloCA=\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"1536650955984\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"LiEf7Mwxac/2PI20eV3kAUPf62AIYVeyiKEyItH+UL6vTGk4L3iULgKYxkrZWjv6PXIth7NHKKNPdsQfl7nFrxCauE4QbDpiYYxrQN5QZ6xJLTqCUVbpJH7Cr6Cnxo9eUOttRykcpquuVW2IJ8xdfKYRmmjkHONAAWogliwILI2Q3UR4Ki+4KuXkoz1tzO5zpznhvv8k9LgloKtx/2gd+hLAMqOQRpuJ3cXBomIEA7NjarC8gmm49wl+x5Z4vN0KIuOOmvh0IkVHGRPAtDn3o7f2LV8a8K2uO4KD8xVY1q/OiDeQAsZGvMv+5x2b8BZ0ZL8iOajGIvyO2RNfFPy1OQ==\""
@@ -139,7 +147,9 @@
             "timestamp" : "1536650955984",
             "nonce" : "iypPgHH6z78Mu3GloCA=",
 
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
+	    "privateCertFileNameP12": "cert/alpha/training.alpha.apex.lab.p12",
+	    "passphrase": "p12password"
         },
         "expectedResult" : {
             "default": "Apex_l2_eg realm=\"apex.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"iypPgHH6z78Mu3GloCA=\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"1536650955984\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"jp4Q2JyVWKlq0ruvD6RJvBrOs5P5b/XDCgrHNfAMOO23+P+A36fi5OFjP14gDqmf/pxwDEvmJuAX2T0oYfAHRzaCAeeh4kdfcYXINCFT/OIF+Xt+1ivTkOAP0IyIKVvQJSblQ4I57xJRGuMMNdR/cw/d9GGGVOpJ2abagP818VWk8QDsTzFG3piItKNRg+fko4VPxPK6UUvs6ce/yh0xh738y4eGM9wUBKAjQRsgz0QMx5u6i2S2dhhJ25EwjlD0q0oS2iAyAv2R7CRPz3rx3ZxptHP87Bg13N0PlMvVkPi+5KlGlGlM6Ty9h0ZvHpeCqjfwk5eblUqAQSX1I6UanA==\""
@@ -163,7 +173,9 @@
 
             "nonce" : "iypPgHH6z78Mu3GloCA=",
 
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
+	    "privateCertFileNameP12": "cert/alpha/training.alpha.apex.lab.p12",
+	    "passphrase": "p12password"
         },
         "expectedResult" : {
             "default": "Apex_l2_eg realm=\"apex.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"iypPgHH6z78Mu3GloCA=\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"%s\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"%s\""
@@ -187,7 +199,9 @@
 
             "timestamp" : "1536650955984",
 
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
+	    "privateCertFileNameP12": "cert/alpha/training.alpha.apex.lab.p12",
+	    "passphrase": "p12password"
         },
         "expectedResult" : {
             "default": "Apex_l2_eg realm=\"apex.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"%s\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"1536650955984\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"%s\""
@@ -209,7 +223,9 @@
 
             "queryString" : { "nullValue1" : "z", "aaParam" : "aaa" },
 
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
+	    "privateCertFileNameP12": "cert/alpha/training.alpha.apex.lab.p12",
+	    "passphrase": "p12password"
         },
         "expectedResult" : {
             "default": "Apex_l2_eg realm=\"apex.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"%s\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"%s\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"%s\""
@@ -225,7 +241,8 @@
         "errorTest" : true,
         "expectedResult" : {
             "default": "One or more required parameters are missing!",
-            "java": "Invalid Authorization Prefix."
+            "java": "Invalid Authorization Prefix.",
+	    "c#": "Value cannot be null.\nParameter name: authPrefix"
         }
     },
     {
