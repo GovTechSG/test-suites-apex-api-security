@@ -1,6 +1,6 @@
 {
   "name": "test-suites-apex-api-security",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "JSON Test Cases for APEX API Security Library",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lim-ming-tat/test-suites-apex-api-security.git"
+    "url": "git+https://github.com/GovTechSG/test-suites-apex-api-security.git"
   },
-  "author": "lim-ming-tat",
-  "license": "ISC",
+  "author": "Ming Tat",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lim-ming-tat/test-suites-apex-api-security/issues"
+    "url": "https://github.com/GovTechSG/test-suites-apex-api-security/issues"
   },
-  "homepage": "https://github.com/lim-ming-tat/test-suites-apex-api-security#readme"
+  "homepage": "https://github.com/GovTechSG/test-suites-apex-api-security#readme"
 }
