@@ -37,7 +37,8 @@
         "errorTest" : true,
         "expectedResult" : {
             "default": "message and secret must not be null or empty!",
-            "java": "baseString must not be null or empty."
+            "java": "baseString must not be null or empty.",
+            "c#": "Value cannot be null.\nParameter name: message"
         }
     },
     {
@@ -52,7 +53,8 @@
         "errorTest" : true,
         "expectedResult" : {
             "default": "message and secret must not be null or empty!",
-            "java": "baseString must not be null or empty."
+            "java": "baseString must not be null or empty.",
+            "c#": "Value cannot be null.\nParameter name: message"
         }
     },
     {
@@ -81,7 +83,8 @@
         "errorTest" : true,
         "expectedResult" : {
             "default": "message and secret must not be null or empty!",
-            "java": "secret must not be null or empty."
+            "java": "secret must not be null or empty.",
+            "c#": "Value cannot be null.\nParameter name: secret"
         }
     },
     {
@@ -96,7 +99,8 @@
         "errorTest" : true,
         "expectedResult" : {
             "default": "message and secret must not be null or empty!",
-            "java": "secret must not be null or empty."
+            "java": "secret must not be null or empty.",
+            "c#": "Value cannot be null.\nParameter name: secret"
         }
     },
     {

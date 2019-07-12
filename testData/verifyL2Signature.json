@@ -53,8 +53,13 @@
         "expectedResult": {
             "default": "",
             "golang": "failed to parse certificate PEM",
+<<<<<<< HEAD
             "nodejs": "error:0909006C:PEM routines:get_name:no start line",
             "java": "Unable to initialize, java.io.IOException: Short read of DER length"
+=======
+            "nodejs" : "PEM_read_bio_PUBKEY failed",
+            "java" : "Unable to initialize, java.io.IOException: Short read of DER length"            
+>>>>>>> fd27cdef0dbb98d3f176eb1062aef65a40a4fded
         }
     }
 ]
