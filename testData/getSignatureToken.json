@@ -177,6 +177,7 @@
 	    "privateCertFileNameP12": "cert/alpha/training.alpha.apex.lab.p12",
 	    "passphrase": "p12password"
         },
+	"determinismTest": true,
         "expectedResult" : {
             "default": "Apex_l2_eg realm=\"apex.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"iypPgHH6z78Mu3GloCA=\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"%s\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"%s\""
         }
@@ -203,6 +204,7 @@
 	    "privateCertFileNameP12": "cert/alpha/training.alpha.apex.lab.p12",
 	    "passphrase": "p12password"
         },
+	"determinismTest": true,
         "expectedResult" : {
             "default": "Apex_l2_eg realm=\"apex.l2.test\", apex_l2_eg_app_id=\"training-3O9HWXNyVT0701KyJIZte787\", apex_l2_eg_nonce=\"%s\", apex_l2_eg_signature_method=\"SHA256withRSA\", apex_l2_eg_timestamp=\"1536650955984\", apex_l2_eg_version=\"1.0\", apex_l2_eg_signature=\"%s\""
         }
@@ -262,6 +264,7 @@
             "nonce" : "xz9WBJXRLSzrcW1lwUq6jovFsfUtPBHSKoYxEhibEQU="
 
         },
+	"determinismTest": true,
         "expectedResult" : {
             "default": "Apex_l1_eg realm=\"http://example.api.test/token\", apex_l1_eg_app_id=\"training-4cz5dacnCsE4IXELymgoyMAA\", apex_l1_eg_nonce=\"xz9WBJXRLSzrcW1lwUq6jovFsfUtPBHSKoYxEhibEQU=\", apex_l1_eg_signature_method=\"HMACSHA256\", apex_l1_eg_timestamp=\"1547520492479\", apex_l1_eg_version=\"1.0\", apex_l1_eg_signature=\"KiWF32zvikBc4ND7Sxm95t9pfxl3WDQMgXXRWgv7S+0=\""
         }
