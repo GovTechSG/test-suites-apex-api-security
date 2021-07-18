@@ -225,5 +225,27 @@
         "expectedResult" : {
             "default": "POST&https://training.api.lab:9991/ai/training/rest/v1/level2/ex-ex&Action=SendMessage&MessageBody=value1m&MessageBody=value1x&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=value1&param2=value2"
         }
+    },
+
+    {
+        "id": "12",
+        "description": "BaseString - FormData Test - Form Data do not sort field with array value",
+
+        "apiParam" : {
+            "realm": "apex.formData.test",
+            "authPrefix": "Apex_l2_eg",
+            "appId": "training-3O9HWXNyVT0701KyJIZte787",
+            
+            "nonce" : "ACn0OmdVmWpqo8N+eyA=",
+            "timestamp" : "1536309473067",
+
+            "signatureUrl": "https://training.api.lab:9991/ai/training/rest/v1/level2/ex-ex?param1=value1&param2=value2",
+            "httpMethod": "POST",
+
+            "formData" : { "MessageBody" : [ "value1x", "value1m" ], "Action" : "SendMessage" }
+        },
+        "expectedResult" : {
+            "default": "POST&https://training.api.lab:9991/ai/training/rest/v1/level2/ex-ex&Action=SendMessage&MessageBody=value1x&MessageBody=value1m&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&param1=value1&param2=value2"
+        }
     }
 ]
