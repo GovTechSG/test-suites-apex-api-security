@@ -158,6 +158,9 @@
             "queryString" : { "param1h" : false, "param1o" : true, "param1a" : 899, "zParam12" : 123.573389, "param1c" : [ "value1cz", "value1cf", 123, true, 32.935643 ], "jasonObjectA" : { "objectParam1" : "oParam1c", "objectParam2" : "oParam2b" } },
             "formData" : { "param1h" : false, "param1o" : true, "param1a" : 899, "zParam11" : 123.5474389, "param1c" : [ "value1cz", "value1cf", 123, true, 32.99756543 ], "jasonObjectB" : { "objectParam1" : "oParam1c", "objectParam2" : "oParam2b" } }
         },
+
+        "skipTest": ["c#"],
+
         "expectedResult" : {
             "default" : "POST&https://training.api.lab/ai/training/rest/v1/level2/ex-ex&apex_l2_eg_app_id=training-3O9HWXNyVT0701KyJIZte787&apex_l2_eg_nonce=ACn0OmdVmWpqo8N+eyA=&apex_l2_eg_signature_method=SHA256withRSA&apex_l2_eg_timestamp=1536309473067&apex_l2_eg_version=1.0&jasonObjectA&jasonObjectB&param1a=899&param1a=899&param1c=123&param1c=123&param1c=32.935643&param1c=32.99756543&param1c=true&param1c=true&param1c=value1cf&param1c=value1cf&param1c=value1cz&param1c=value1cz&param1h=false&param1h=false&param1o=true&param1o=true&zParam11=123.5474389&zParam12=123.573389"
         }
