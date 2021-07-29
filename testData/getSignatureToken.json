@@ -205,7 +205,8 @@
         "expectedResult": {
             "default": "One or more required parameters are missing!",
             "java": "Invalid Authorization Prefix.",
-            "c#": "Value cannot be null.\nParameter name: url"
+            "c#": "Value cannot be null.\nParameter name: url",
+            "c#net5": "Value cannot be null. (Parameter 'url')"
         }
     },
     {

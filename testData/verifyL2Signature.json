@@ -48,7 +48,7 @@
         ],
         "errorTest": true,
         "expectedResult": {
-            "default": "",
+            "default": "true",
             "golang": "failed to parse certificate PEM",
             "nodejs": "PEM_read_bio_PUBKEY failed",
             "java": "Unable to initialize, java.io.IOException: Short read of DER length"

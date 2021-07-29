@@ -19,6 +19,7 @@
         },
         "skipTest": [
             "c#",
+            "c#net5",
             "java",
             "golang",
             "nodejs"
@@ -38,7 +39,8 @@
         "expectedResult": {
             "default": "message and secret must not be null or empty!",
             "java": "baseString must not be null or empty.",
-            "c#": "Value cannot be null.\nParameter name: message"
+            "c#": "Value cannot be null.\nParameter name: message",
+            "c#net5": "Value cannot be null. (Parameter 'message')"
         }
     },
     {
@@ -52,7 +54,8 @@
         "expectedResult": {
             "default": "message and secret must not be null or empty!",
             "java": "baseString must not be null or empty.",
-            "c#": "Value cannot be null.\nParameter name: message"
+            "c#": "Value cannot be null.\nParameter name: message",
+            "c#net5": "Value cannot be empty. (Parameter 'message')"
         }
     },
     {
@@ -64,6 +67,7 @@
         },
         "skipTest": [
             "c#",
+            "c#net5",
             "java",
             "golang",
             "nodejs"
@@ -83,7 +87,8 @@
         "expectedResult": {
             "default": "message and secret must not be null or empty!",
             "java": "secret must not be null or empty.",
-            "c#": "Value cannot be null.\nParameter name: secret"
+            "c#": "Value cannot be null.\nParameter name: secret",
+            "c#net5": "Value cannot be null. (Parameter 'secret')"
         }
     },
     {
@@ -97,7 +102,8 @@
         "expectedResult": {
             "default": "message and secret must not be null or empty!",
             "java": "secret must not be null or empty.",
-            "c#": "Value cannot be null.\nParameter name: secret"
+            "c#": "Value cannot be null.\nParameter name: secret",
+            "c#net5": "Value cannot be empty. (Parameter 'secret')"
         }
     },
     {
