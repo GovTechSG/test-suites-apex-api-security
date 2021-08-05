@@ -1,12 +1,11 @@
-[{
+[
+    {
         "id": "1",
         "description": "getRSASignature - Baseline - PEM file without passphrase",
-
         "message": "message",
         "apiParam": {
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
-        "testTag": true,
         "expectedResult": {
             "default": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         }
@@ -14,13 +13,11 @@
     {
         "id": "2",
         "description": "getRSASignature - Baseline - PEM file with passphrase",
-
         "message": "message",
         "apiParam": {
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.pkcs8.key",
             "passphrase": "passwordkey"
         },
-        "testTag": true,
         "expectedResult": {
             "default": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         }
@@ -28,35 +25,31 @@
     {
         "id": "3.1",
         "description": "getRSASignature - message is null",
-
         "message": null,
         "apiParam": {
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
-
-        "testTag": true,
         "errorTest": true,
         "expectedResult": {
             "default": "message and privateKey must not be null or empty",
             "java": "baseString must not be null or empty.",
-            "c#": "Value cannot be null.\nParameter name: message"
+            "c#": "Value cannot be null.\nParameter name: message",
+            "c#net5": "Value cannot be null. (Parameter 'message')"
         }
     },
     {
         "id": "3.2",
         "description": "getRSASignature - message is empty",
-
         "message": "",
         "apiParam": {
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem"
         },
-
-        "testTag": true,
         "errorTest": true,
         "expectedResult": {
             "default": "message and privateKey must not be null or empty",
             "java": "baseString must not be null or empty.",
-            "c#": "Value cannot be null.\nParameter name: message"
+            "c#": "Value cannot be null.\nParameter name: message",
+            "c#net5": "Value cannot be null. (Parameter 'message')"
         }
     },
     {
@@ -64,7 +57,7 @@
         "description": "getRSASignature - message is utf8",
         "message": "Lorem ipsum dolor sit amet, vel nihil senserit ei. Ne quo erat feugait disputationi.",
         "apiParam": {
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.pkcs8.key",
             "passphrase": "passwordkey"
         },
         "expectedResult": {
@@ -76,7 +69,7 @@
         "description": "getRSASignature - message is utf8(Chinese Traditional)",
         "message": "道続万汁国圭絶題手事足物目族月会済。",
         "apiParam": {
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.pkcs8.key",
             "passphrase": "passwordkey"
         },
         "expectedResult": {
@@ -88,7 +81,7 @@
         "description": "getRSASignature - message is utf8(Japanese)",
         "message": "員ちぞど移点お告周ひょ球独狙チウソノ法保断フヒシハ東5広みぶめい質創ごぴ採8踊表述因仁らトつ。",
         "apiParam": {
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.pkcs8.key",
             "passphrase": "passwordkey"
         },
         "expectedResult": {
@@ -100,7 +93,7 @@
         "description": "getRSASignature - message is utf8(Korean)",
         "message": "대통령은 즉시 이를 공포하여야 한다, 그 자율적 활동과 발전을 보장한다.",
         "apiParam": {
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.pkcs8.key",
             "passphrase": "passwordkey"
         },
         "expectedResult": {
@@ -110,10 +103,9 @@
     {
         "id": "8",
         "description": "getRSASignature - message is utf8(Greek)",
-
         "message": "Λορεμ ιπσθμ δολορ σιτ αμετ, τατιον ινιμιcθσ τε ηασ, ιν εαμ μοδο ποσσιμ ινvιδθντ.",
         "apiParam": {
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.pkcs8.key",
             "passphrase": "passwordkey"
         },
         "expectedResult": {
@@ -125,7 +117,7 @@
         "description": "getRSASignature - L2 BaseString",
         "message": "GET&https://test.example.com/api/v1/rest/level1/in-in/&auth_prefix_app_id=app-id-lpX54CVNltS0ye03v2mQc0b&auth_prefix_nonce=-4985265956715077053&auth_prefix_signature_method=HMACSHA256&auth_prefix_timestamp=1502159855341&auth_prefix_version=1.0&param1=def+123",
         "apiParam": {
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.pkcs8.key",
             "passphrase": "passwordkey"
         },
         "expectedResult": {
@@ -137,15 +129,13 @@
         "description": "getRSASignature - L2 BaseString with UTF8 Parameters",
         "message": "GET&https://test.example.com/api/v1/rest/level1/in-in/&ap=裕廊坊 心邻坊&auth_prefix_app_id=app-id-lpX54CVNltS0ye03v2mQc0b&auth_prefix_nonce=2851111144329605674&auth_prefix_signature_method=HMACSHA256&auth_prefix_timestamp=1502163903712&auth_prefix_version=1.0",
         "apiParam": {
-            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
+            "privateCertFileName": "cert/alpha/training.alpha.apex.lab.pkcs8.key",
             "passphrase": "passwordkey"
         },
         "expectedResult": {
             "default": "Xrr6IGpnUZwtWQHd2LI+QlQJOpIPE8gAv7t3h1YvslJiA4DD/y1TpR5x5LCYk0ooDhq3Di48Nt8H+Sc/UT3QrKd6jpJrM2e9qK57+RX1ImT437fWz8GYCtdJhEiRjyemg5Eidv/vuLkMsICeNb61gScokgJ7wWdD+dyNlN3ThIdATcNfzrqz2+1b3c0qhovX1CoGlegPBez8vdqpyidqBVz5nPqKHmdnqS11xrxKPVTo6Kx4v/J3IMM7BZ7lRidpyMKYireO+O2+29UPbOAurismLGdtWd9UcA6Iz1Cf4ffPZxsMUY9Y0FubRPuw5RpusFPpI0q3iBu2U4QYc5pA3w=="
         }
     },
-
-
     {
         "id": "13",
         "description": "getRSASignature - PEM without Passphrase",
@@ -154,12 +144,17 @@
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
             "passphrase": "invalidPassphrase"
         },
-        "testTag": true,
         "errorTest": true,
-        "skipTest": ["nodejs", "java", "c#"],
+        "skipTest": [
+            "nodejs",
+            "java"
+        ],
         "expectedResult": {
             "default": "",
-            "golang": "x509: no DEK-Info header in block"
+            "golang": "x509: no DEK-Info header in block",
+            "c#Desc": "invalid passphrase does not trigger error.",
+            "c#": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g==",
+            "c#net5": "No supported key formats were found. Check that the input represents the contents of a PEM-encoded key file, not the path to such a file. (Parameter 'input')"
         }
     },
     {
@@ -170,15 +165,14 @@
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase": "wrongPassphrase"
         },
-        "testTag": true,
         "errorTest": true,
         "expectedResult": {
             "default": "",
             "golang": "x509: decryption password incorrect",
             "nodejs": "error:06065064:digital envelope routines:EVP_DecryptFinal_ex:bad decrypt",
             "java": "exception using cipher - please check password and data.",
-            "c#": "pad block corrupted"
-
+            "c#": "pad block corrupted",
+            "c#net5": "No supported key formats were found. Check that the input represents the contents of a PEM-encoded key file, not the path to such a file. (Parameter 'input')"
         }
     },
     {
@@ -189,15 +183,14 @@
             "privateCertFileName": "cert/alpha/invalidFileName.pem",
             "passphrase": "passphrase"
         },
-        "testTag": true,
         "errorTest": true,
-        "skipTest": ["c#"],
         "expectedResult": {
             "default": "",
             "golang": "Unable to open file invalidFileName.pem",
             "nodejs": "ENOENT: no such file or directory, open 'node_modules/test-suites-apex-api-security/cert/alpha/invalidFileName.pem'",
-            "java": "src/main/resources/test-suites/cert/alpha/invalidFileName.pem (No such file or directory)"
-
+            "java": "src/main/resources/test-suites/cert/alpha/invalidFileName.pem (No such file or directory)",
+            "c#": "Could not find file \"cert/alpha/invalidFileName.pem\"",
+            "c#net5": "Could not find file 'cert/alpha/invalidFileName.pem'."
         }
     },
     {
@@ -208,15 +201,14 @@
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.public.pem",
             "passphrase": "passphrase"
         },
-        "testTag": true,
         "errorTest": true,
         "expectedResult": {
             "default": "",
             "golang": "Unable to read private key from training.alpha.apex.lab.public.pem",
             "nodejs": "error:0909006C:PEM routines:get_name:no start line",
             "java": "org.bouncycastle.cert.X509CertificateHolder cannot be cast to org.bouncycastle.openssl.PEMKeyPair",
-            "c#": "Specified cast is not valid."
-
+            "c#": "Specified cast is not valid.",
+            "c#net5": "No supported key formats were found. Check that the input represents the contents of a PEM-encoded key file, not the path to such a file. (Parameter 'input')"
         }
     }
 ]

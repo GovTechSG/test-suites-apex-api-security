@@ -1,0 +1,153 @@
+[
+    {
+        "id": "1",
+        "description": "Supported Private Key - PKCS#1 (RSA) Encrypted",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.encrypted.pem",
+            "passphrase": "passwordkey",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "2",
+        "description": "Supported Private Key - PKCS#1 (RSA)",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "3",
+        "description": "Supported Private Key - PKCS#8 Encrypted",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.encrypted.pem",
+            "passphrase": "passwordkey",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "4",
+        "description": "Supported Private Key - PKCS#8",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "5",
+        "description": "Supported Private Key - Keystore P12/PFX Encrypted",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/keystore.alpha.pkcs12.encrypted.p12",
+            "passphrase": "p12password",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "6",
+        "description": "Supported Private Key - Keystore P12/PFX",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/keystore.alpha.pkcs12.nopass.p12",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+
+
+
+
+    {
+        "id": "11",
+        "description": "Supported Public Key - X509 Certificate in PEM Format",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "12",
+        "description": "Supported Public Key - X509 Certificate in DER Format",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.bin.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "13",
+        "description": "Supported Public Key - Public Key in PEM Format",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/publickey.alpha.key",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "14",
+        "description": "Supported Public Key - Keystore P12/PFX Encrypted",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/keystore.alpha.pkcs12.encrypted.p12",
+        "passphrase": "p12password",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "15",
+        "description": "Supported Public Key - Keystore P12/PFX",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/keystore.alpha.pkcs12.nopass.p12",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    }
+]
