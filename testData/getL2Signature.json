@@ -34,7 +34,7 @@
             "default": "message and privateKey must not be null or empty",
             "java": "baseString must not be null or empty.",
             "c#": "Value cannot be null.\nParameter name: message",
-            "c#net5": "Value cannot be null. (Parameter 'message')"
+            "c#net5": "xValue cannot be null. (Parameter 'message')"
         }
     },
     {
@@ -138,7 +138,8 @@
     },
     {
         "id": "13",
-        "description": "getRSASignature - PEM without Passphrase",
+        "todo": "to be deleted: test case move to verifySupportedKeyFileType 17",
+        "description": "to be deleted <<< getRSASignature - PEM without Passphrase",
         "message": "message",
         "apiParam": {
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.nopass.pem",
@@ -147,7 +148,8 @@
         "errorTest": true,
         "skipTest": [
             "nodejs",
-            "java"
+            "java",
+            "c#net5"
         ],
         "expectedResult": {
             "default": "",
@@ -159,12 +161,16 @@
     },
     {
         "id": "14",
-        "description": "getRSASignature - invalid passphrase",
+        "todo": "to be deleted: test case move to verifySupportedKeyFileType 18",
+        "description": "to be deleted <<< getRSASignature - invalid passphrase",
         "message": "message",
         "apiParam": {
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.key",
             "passphrase": "wrongPassphrase"
         },
+        "skipTest": [
+            "c#net5"
+        ],
         "errorTest": true,
         "expectedResult": {
             "default": "",
@@ -177,12 +183,16 @@
     },
     {
         "id": "15",
-        "description": "getRSASignature - Invalid PrivateCertFileName",
+        "todo": "to be deleted: test case move to verifySupportedKeyFileType 01",
+        "description": "to be deleted <<< getRSASignature - Invalid PrivateCertFileName",
         "message": "message",
         "apiParam": {
             "privateCertFileName": "cert/alpha/invalidFileName.pem",
             "passphrase": "passphrase"
         },
+        "skipTest": [
+            "c#net5"
+        ],
         "errorTest": true,
         "expectedResult": {
             "default": "",
@@ -195,12 +205,16 @@
     },
     {
         "id": "16",
-        "description": "getRSASignature - Invalid PrivateCertFileName format",
+        "todo": "to be deleted: test case move to verifySupportedKeyFileType 19",
+        "description": "to be deleted <<< getRSASignature - Invalid PrivateCertFileName format",
         "message": "message",
         "apiParam": {
             "privateCertFileName": "cert/alpha/training.alpha.apex.lab.public.pem",
             "passphrase": "passphrase"
         },
+        "skipTest": [
+            "c#net5"
+        ],
         "errorTest": true,
         "expectedResult": {
             "default": "",
