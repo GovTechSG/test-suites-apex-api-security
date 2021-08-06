@@ -46,6 +46,7 @@
         },
         "skipTest": [
             "java",
+            "nodejs",
             "c#net5"
         ],
         "errorTest": true,

@@ -34,7 +34,7 @@
             "default": "message and privateKey must not be null or empty",
             "java": "baseString must not be null or empty.",
             "c#": "Value cannot be null.\nParameter name: message",
-            "c#net5": "xValue cannot be null. (Parameter 'message')"
+            "c#net5": "Value cannot be null. (Parameter 'message')"
         }
     },
     {
@@ -191,7 +191,8 @@
             "passphrase": "passphrase"
         },
         "skipTest": [
-            "c#net5"
+            "c#net5",
+            "nodejs"
         ],
         "errorTest": true,
         "expectedResult": {

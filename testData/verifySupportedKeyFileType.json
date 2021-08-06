@@ -136,6 +136,9 @@
             "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.nopass.pem",
             "passphrase": "invalid"
         },
+        "skipTest": [
+            "nodejs"
+        ],
         "errorTest": true,
         "exceptionType": {
             "default": "",
@@ -143,6 +146,7 @@
         },
         "expectedResult": {
             "default": "",
+            "nodejs": "not applicable - nodejs read the file as text",
             "c#net5": "No supported key formats were found. Check that the input represents the contents of a PEM-encoded key file, not the path to such a file. (Parameter 'input')"
         }
     },
@@ -154,6 +158,9 @@
             "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.encrypted.pem",
             "passphrase": "invalid"
         },
+        "skipTest": [
+            "nodejs"
+        ],
         "errorTest": true,
         "exceptionType": {
             "default": "",
@@ -161,6 +168,7 @@
         },
         "expectedResult": {
             "default": "",
+            "nodejs": "not applicable - nodejs read the file as text",
             "c#net5": "The EncryptedPrivateKeyInfo structure was decoded but was not successfully interpreted, the password may be incorrect."
         }
     },
@@ -171,6 +179,9 @@
         "apiParam": {
             "privateKeyFileName": "cert/alpha/cert.alpha.x509.bin.cer"
         },
+        "skipTest": [
+            "nodejs"
+        ],
         "errorTest": true,
         "exceptionType": {
             "default": "",
@@ -178,6 +189,7 @@
         },
         "expectedResult": {
             "default": "",
+            "nodejs": "not applicable - nodejs read the file as text",
             "c#net5": "No supported key formats were found. Check that the file format are supported."
         }
     },
@@ -188,6 +200,9 @@
         "apiParam": {
             "privateKeyFileName": "cert/alpha/publickey.alpha.key"
         },
+        "skipTest": [
+            "nodejs"
+        ],
         "errorTest": true,
         "exceptionType": {
             "default": "",
@@ -195,6 +210,7 @@
         },
         "expectedResult": {
             "default": "",
+            "nodejs": "not applicable - nodejs read the file as text",
             "c#net5": "No supported key formats were found. Check that the file format are supported."
         }
     },
