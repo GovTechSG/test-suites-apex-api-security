@@ -8,7 +8,8 @@
         "errorTest": true,
         "exceptionType": {
             "default": "",
-            "c#net5": "FileNotFoundException"
+            "c#net5": "FileNotFoundException",
+            "c#": "FileNotFoundException"
         },
         "expectedResult": {
             "default": "",
@@ -26,7 +27,8 @@
         "errorTest": true,
         "exceptionType": {
             "default": "",
-            "c#net5": "FileNotFoundException"
+            "c#net5": "FileNotFoundException",
+            "c#": "FileNotFoundException"
         },
         "expectedResult": {
             "default": "",
@@ -131,18 +133,21 @@
     },
     {
         "id": "17",
+        "remarks": "not applicable to nodejs as it read the file as text",
         "description": "getPrivateKey - PKCS#1 (RSA) - without passphrase but access with passphrase",
         "apiParam": {
             "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.nopass.pem",
             "passphrase": "invalid"
         },
         "skipTest": [
-            "nodejs"
+            "nodejs",
+            "c#"
         ],
         "errorTest": true,
         "exceptionType": {
             "default": "",
-            "c#net5": "ArgumentException"
+            "c#net5": "ArgumentException",
+            "c#": "ArgumentException"
         },
         "expectedResult": {
             "default": "",
@@ -151,7 +156,27 @@
         }
     },
     {
+        "id": "17.1",
+        "remarks": "c# using BouncyCastle library will ignore passphrase provided when the pem file is not encrypted",
+        "description": "getPrivateKey - PKCS#1 (RSA) - without passphrase but access with passphrase",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.nopass.pem",
+            "passphrase": "invalid",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "skipTest": [
+            "nodejs",
+            "c#net5"
+        ],
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
         "id": "18",
+        "remarks": "not applicable to nodejs as it read the file as text",
         "description": "getPrivateKey - PKCS#8 Encrypted - invalid passphrase",
 
         "apiParam": {
@@ -164,18 +189,19 @@
         "errorTest": true,
         "exceptionType": {
             "default": "",
-            "c#net5": "CryptographicException"
+            "c#net5": "CryptographicException",
+            "c#": "PemException"
         },
         "expectedResult": {
             "default": "",
-            "nodejs": "not applicable - nodejs read the file as text",
-            "c#net5": "The EncryptedPrivateKeyInfo structure was decoded but was not successfully interpreted, the password may be incorrect."
+            "c#net5": "The EncryptedPrivateKeyInfo structure was decoded but was not successfully interpreted, the password may be incorrect.",
+            "c#":"problem creating ENCRYPTED private key: Org.BouncyCastle.Crypto.InvalidCipherTextException: pad block corrupted\n  at Org.BouncyCastle.Crypto.Paddings.Pkcs7Padding.PadCount (System.Byte[] input) [0x0001e] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.Paddings.PaddedBufferedBlockCipher.DoFinal (System.Byte[] output, System.Int32 outOff) [0x000cc] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.BufferedBlockCipher.DoFinal (System.Byte[] input, System.Int32 inOff, System.Int32 inLen) [0x0003a] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal (System.Byte[] input) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Pkcs.PrivateKeyInfoFactory.CreatePrivateKeyInfo (System.Char[] passPhrase, System.Boolean wrongPkcs12Zero, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00044] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Pkcs.PrivateKeyInfoFactory.CreatePrivateKeyInfo (System.Char[] passPhrase, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Security.PrivateKeyFactory.DecryptKey (System.Char[] passPhrase, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.OpenSsl.PemReader.ReadPrivateKey (Org.BouncyCastle.Utilities.IO.Pem.PemObject pemObject) [0x00348] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 "
         }
     },
     {
         "id": "19",
+        "remarks": "not applicable to nodejs as it read the file as text",
         "description": "getPrivateKey - Public Certificate provided",
-
         "apiParam": {
             "privateKeyFileName": "cert/alpha/cert.alpha.x509.bin.cer"
         },
@@ -185,18 +211,18 @@
         "errorTest": true,
         "exceptionType": {
             "default": "",
-            "c#net5": "CryptographicException"
+            "c#net5": "CryptographicException",
+            "c#": "CryptographicException"
         },
         "expectedResult": {
-            "default": "",
-            "nodejs": "not applicable - nodejs read the file as text",
+            "default": "No supported key formats were found. Check that the file format are supported.",
             "c#net5": "No supported key formats were found. Check that the file format are supported."
         }
     },
     {
         "id": "20",
+        "remarks": "not applicable to nodejs as it read the file as text",
         "description": "getPrivateKey - Public Key provided",
-
         "apiParam": {
             "privateKeyFileName": "cert/alpha/publickey.alpha.key"
         },
@@ -206,12 +232,13 @@
         "errorTest": true,
         "exceptionType": {
             "default": "",
-            "c#net5": "CryptographicException"
+            "c#net5": "CryptographicException",
+            "c#": "InvalidCastException"
         },
         "expectedResult": {
             "default": "",
-            "nodejs": "not applicable - nodejs read the file as text",
-            "c#net5": "No supported key formats were found. Check that the file format are supported."
+            "c#net5": "No supported key formats were found. Check that the file format are supported.",
+            "c#": "Specified cast is not valid."
         }
     },
 
@@ -294,6 +321,7 @@
     },
     {
         "id": "26",
+        "remarks": "nodejs and c#net5 can get public key from private key pem",
         "description": "getPublicKey - get Public Key from Private Key",
         "message": "message",
         "publicKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
@@ -302,10 +330,29 @@
             "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },
         "skipTest": [
-            "nodejs"
+            "c#"
         ],
         "expectedResult": {
             "default": "true"
+        }
+    },
+    {
+        "id": "26.1",
+        "remarks": "c# using BouncyCastle library which can't get public key from private key file",
+        "description": "getPublicKey - get Public Key from Private Key",
+        "publicKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+        "skipTest": [
+            "nodejs",
+            "c#net5"
+        ],
+        "errorTest": true,
+        "exceptionType": {
+            "default": "",
+            "c#": "CryptographicException"
+        },
+        "expectedResult": {
+            "default": "",
+            "c#": "Missing Exponent"
         }
     }
 ]
