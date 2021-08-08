@@ -11,24 +11,6 @@
         }
     },
     {
-        "id": "2",
-        "description": "getHMACSignature - message is null",
-        "message": null,
-        "apiParam": {
-            "secret": "secret"
-        },
-        "skipTest": [
-            "c#",
-            "c#net5",
-            "java",
-            "golang",
-            "nodejs"
-        ],
-        "expectedResult": {
-            "default": "+eZuF5tnR65UEI+C+K3os8Jddv0wr95sOVgixTAZYWk="
-        }
-    },
-    {
         "id": "2.1",
         "description": "getHMACSignature - message is null",
         "message": null,
@@ -64,24 +46,6 @@
             "java": "baseString must not be null or empty.",
             "c#": "Value cannot be null.\nParameter name: message",
             "c#net5": "Value cannot be empty. (Parameter 'message')"
-        }
-    },
-    {
-        "id": "3",
-        "description": "getHMACSignature - message and secret is null",
-        "message": null,
-        "apiParam": {
-            "secret": null
-        },
-        "skipTest": [
-            "c#",
-            "c#net5",
-            "java",
-            "golang",
-            "nodejs"
-        ],
-        "expectedResult": {
-            "default": "thNnmggU2ex3L5XXeMNfxf8Wl8STcVZTxscSFEKSxa0="
         }
     },
     {

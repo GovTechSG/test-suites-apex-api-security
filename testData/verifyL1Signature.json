@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "description": "verifyHMACSignature - Baseline",
+        "description": "VerifyL1Signature - Baseline",
         "message": "message",
         "apiParam": {
             "secret": "secret",

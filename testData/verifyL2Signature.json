@@ -1,9 +1,9 @@
 [
     {
         "id": "1",
-        "description": "VerifyL2Signature - Certificate in text format with PEM encoding and with .cer extension",
+        "description": "VerifyL2Signature - Baseline",
         "message": "message",
-        "publicCertFileName": "cert/alpha/training.alpha.apex.lab.public.cer",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
         "apiParam": {
             "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },
@@ -13,66 +13,38 @@
     },
     {
         "id": "2",
-        "description": "VerifyL2Signature - Certificate in text format with PEM encoding and with .pem extension",
+        "description": "VerifyL2Signature - Validate with wrong cert",
         "message": "message",
-        "publicCertFileName": "cert/alpha/training.alpha.apex.lab.public.pem",
+        "publicKeyFileName": "cert/alpha/cert.beta.x509.pem.cer",
         "apiParam": {
             "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },
         "expectedResult": {
-            "default": "true"
+            "default": "false"
         }
     },
     {
         "id": "3",
-        "description": "VerifyL2Signature - Public Key in text format with PEM encoding and with .key extension",
-        "message": "message",
-        "publicCertFileName": "cert/alpha/training.alpha.apex.lab.public.key",
+        "description": "VerifyL2Signature - Validate with wrong message",
+        "message": "messageX",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
         "apiParam": {
             "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },
         "expectedResult": {
-            "default": "true"
+            "default": "false"
         }
     },
     {
         "id": "4",
-        "todo": "to be deleted: test case move to verifySupportedKeyFileType 22",
-        "description": "to be deleted <<< VerifyL2Signature - Certificate in binary format with DER encoding and with .cer extension",
+        "description": "VerifyL2Signature - Validate with wrong signature",
         "message": "message",
-        "publicCertFileName": "cert/alpha/training.alpha.apex.lab.cer",
+        "publicKeyFileName": "cert/alpha/cert.beta.x509.pem.cer",
         "apiParam": {
-            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+            "signature": "CYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },
-        "skipTest": [
-            "java",
-            "nodejs",
-            "c#net5"
-        ],
-        "errorTest": true,
         "expectedResult": {
-            "default": "true",
-            "golang": "failed to parse certificate PEM",
-            "nodejs": "PEM_read_bio_PUBKEY failed",
-            "java": "Unable to initialize, java.io.IOException: Short read of DER length"
-        }
-    },
-    {
-        "id": "5",
-        "description": "VerifyL2Signature - Certificate in binary format with .p12 extension",
-        "message": "message",
-        "publicCertFileName": "cert/alpha/training.alpha.apex.lab.p12",
-        "passphrase": "p12password",
-        "apiParam": {
-            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
-        },
-        "skipTest": [
-            "java",
-            "golang",
-            "nodejs"
-        ],
-        "expectedResult": {
-            "default": "true"
+            "default": "false"
         }
     }
 ]
