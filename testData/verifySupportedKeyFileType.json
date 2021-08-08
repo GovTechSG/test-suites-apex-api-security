@@ -165,7 +165,6 @@
     },
     {
         "id": "17.1",
-        "remarks": "c# using BouncyCastle library will ignore passphrase provided when the pem file is not encrypted",
         "description": "getPrivateKey - PKCS#1 (RSA) - without passphrase but access with passphrase",
         "message": "message",
         "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
@@ -180,6 +179,7 @@
         ],
         "expectedResult": {
             "nodejs": "not applicable, nodejs read input file as text",
+            "c#net5": "not applicable for c#net5",
 
             "default": "true"
         }

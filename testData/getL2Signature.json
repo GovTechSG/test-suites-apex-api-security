@@ -7,6 +7,11 @@
             "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.nopass.pem"
         },
         "errorTest": true,
+        "exceptionType": {
+            "default": "",
+            "c#net5": "ArgumentException",
+            "c#": "ArgumentNullException"
+        },
         "expectedResult": {
             "default": "message and privateKey must not be null or empty",
             "java": "baseString must not be null or empty.",
@@ -22,6 +27,11 @@
             "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.nopass.pem"
         },
         "errorTest": true,
+        "exceptionType": {
+            "default": "",
+            "c#net5": "ArgumentNullException",
+            "c#": "ArgumentNullException"
+        },
         "expectedResult": {
             "default": "message and privateKey must not be null or empty",
             "java": "baseString must not be null or empty.",

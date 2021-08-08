@@ -20,7 +20,8 @@
         "errorTest": true,
         "exceptionType": {
             "default": "",
-            "c#net5": "ArgumentNullException"
+            "c#net5": "ArgumentNullException",
+            "c#": "ArgumentNullException"
         },
         "expectedResult": {
             "default": "message and secret must not be null or empty!",
@@ -39,7 +40,8 @@
         "errorTest": true,
         "exceptionType": {
             "default": "",
-            "c#net5": "ArgumentException"
+            "c#net5": "ArgumentException",
+            "c#": "ArgumentNullException"
         },
         "expectedResult": {
             "default": "message and secret must not be null or empty!",
@@ -58,7 +60,8 @@
         "errorTest": true,
         "exceptionType": {
             "default": "",
-            "c#net5": "ArgumentNullException"
+            "c#net5": "ArgumentNullException",
+            "c#": "ArgumentNullException"
         },
         "expectedResult": {
             "default": "message and secret must not be null or empty!",
@@ -77,7 +80,8 @@
         "errorTest": true,
         "exceptionType": {
             "default": "",
-            "c#net5": "ArgumentException"
+            "c#net5": "ArgumentException",
+            "c#": "ArgumentNullException"
         },
         "expectedResult": {
             "default": "message and secret must not be null or empty!",
