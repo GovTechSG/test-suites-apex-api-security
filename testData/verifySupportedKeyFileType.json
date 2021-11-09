@@ -56,7 +56,6 @@
         ],
         "expectedResult": {
             "c#net5": "c#net5 does not support encrypted PKCS#1 (RSA) key type",
-
             "default": "true"
         }
     },
@@ -107,6 +106,7 @@
         "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
         "apiParam": {
             "privateKeyFileName": "cert/alpha/keystore.alpha.pkcs12.encrypted.p12",
+            "alias": "alpha",
             "passphrase": "p12password",
             "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },
@@ -126,6 +126,7 @@
         "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
         "apiParam": {
             "privateKeyFileName": "cert/alpha/keystore.alpha.pkcs12.nopass.p12",
+            "alias": "alpha",
             "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
         },
         "skipTest": [
@@ -147,7 +148,8 @@
         },
         "skipTest": [
             "nodejs",
-            "c#"
+            "c#",
+            "java"
         ],
         "errorTest": true,
         "exceptionType": {
@@ -158,6 +160,7 @@
         "expectedResult": {
             "nodejs": "not applicable, nodejs read input file as text",
             "c#": "not applicable, c# will not trigger any error. Positive c# test in 17.1",
+            "java": "not applicable, java will not trigger any error.",
 
             "default": "",
             "c#net5": "No supported key formats were found. Check that the input represents the contents of a PEM-encoded key file, not the path to such a file. (Parameter 'input')"
@@ -207,7 +210,8 @@
 
             "default": "",
             "c#net5": "The EncryptedPrivateKeyInfo structure was decoded but was not successfully interpreted, the password may be incorrect.",
-            "c#":"problem creating ENCRYPTED private key: Org.BouncyCastle.Crypto.InvalidCipherTextException: pad block corrupted\n  at Org.BouncyCastle.Crypto.Paddings.Pkcs7Padding.PadCount (System.Byte[] input) [0x0001e] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.Paddings.PaddedBufferedBlockCipher.DoFinal (System.Byte[] output, System.Int32 outOff) [0x000cc] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.BufferedBlockCipher.DoFinal (System.Byte[] input, System.Int32 inOff, System.Int32 inLen) [0x0003a] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal (System.Byte[] input) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Pkcs.PrivateKeyInfoFactory.CreatePrivateKeyInfo (System.Char[] passPhrase, System.Boolean wrongPkcs12Zero, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00044] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Pkcs.PrivateKeyInfoFactory.CreatePrivateKeyInfo (System.Char[] passPhrase, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Security.PrivateKeyFactory.DecryptKey (System.Char[] passPhrase, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.OpenSsl.PemReader.ReadPrivateKey (Org.BouncyCastle.Utilities.IO.Pem.PemObject pemObject) [0x00348] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 "
+            "c#":"problem creating ENCRYPTED private key: Org.BouncyCastle.Crypto.InvalidCipherTextException: pad block corrupted\n  at Org.BouncyCastle.Crypto.Paddings.Pkcs7Padding.PadCount (System.Byte[] input) [0x0001e] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.Paddings.PaddedBufferedBlockCipher.DoFinal (System.Byte[] output, System.Int32 outOff) [0x000cc] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.BufferedBlockCipher.DoFinal (System.Byte[] input, System.Int32 inOff, System.Int32 inLen) [0x0003a] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal (System.Byte[] input) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Pkcs.PrivateKeyInfoFactory.CreatePrivateKeyInfo (System.Char[] passPhrase, System.Boolean wrongPkcs12Zero, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00044] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Pkcs.PrivateKeyInfoFactory.CreatePrivateKeyInfo (System.Char[] passPhrase, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Security.PrivateKeyFactory.DecryptKey (System.Char[] passPhrase, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.OpenSsl.PemReader.ReadPrivateKey (Org.BouncyCastle.Utilities.IO.Pem.PemObject pemObject) [0x00348] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 ",
+            "java": "unable to read encrypted data: Error finalising cipher"
         }
     },
     {
@@ -230,7 +234,8 @@
             "nodejs": "not applicable, nodejs read input file as text",
 
             "default": "No supported key formats were found. Check that the file format are supported.",
-            "c#net5": "No supported key formats were found. Check that the file format are supported."
+            "c#net5": "No supported key formats were found. Check that the file format are supported.",
+            "java": "Error while getting Private Key from KeyStore"
         }
     },
     {
@@ -254,7 +259,8 @@
 
             "default": "",
             "c#net5": "No supported key formats were found. Check that the file format are supported.",
-            "c#": "Specified cast is not valid."
+            "c#": "Specified cast is not valid.",
+            "java": "Error while getting Private Key from PEM"
         }
     },
 
@@ -309,6 +315,7 @@
         "description": "getPublicKey - from Keystore P12/PFX Encrypted",
         "message": "message",
         "publicKeyFileName": "cert/alpha/keystore.alpha.pkcs12.encrypted.p12",
+        "alias": "alpha",
         "passphrase": "p12password",
         "apiParam": {
             "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
@@ -328,6 +335,7 @@
         "description": "getPublicKey - from Keystore P12/PFX",
         "message": "message",
         "publicKeyFileName": "cert/alpha/keystore.alpha.pkcs12.nopass.p12",
+        "alias": "alpha",
         "apiParam": {
             "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
             "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
@@ -377,7 +385,8 @@
             "c#net5": "not applicable - c#net5 does not trigger error",
 
             "default": "",
-            "c#": "Missing Exponent"
+            "c#": "Missing Exponent",
+            "java": "org.bouncycastle.asn1.pkcs.PrivateKeyInfo cannot be cast to org.bouncycastle.openssl.PEMKeyPair"
         }
     }
 ]
