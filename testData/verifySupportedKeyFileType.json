@@ -1,0 +1,383 @@
+[
+    {
+        "id": "01",
+        "description": "getPrivateKey - Invalid PrivateKeyFileName",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/invalidFileName.pem"
+        },
+        "errorTest": true,
+        "exceptionType": {
+            "default": "",
+            "c#net5": "FileNotFoundException",
+            "c#": "FileNotFoundException"
+        },
+        "expectedResult": {
+            "default": "",
+            "golang": "Unable to open file invalidFileName.pem",
+            "nodejs": "ENOENT: no such file or directory, open '%s'",
+            "java": "src/main/resources/test-suites/cert/alpha/invalidFileName.pem (No such file or directory)",
+            "c#": "Could not find file \"cert/alpha/invalidFileName.pem\"",
+            "c#net5": "Could not find file 'cert/alpha/invalidFileName.pem'."
+        }
+    },
+    {
+        "id": "02",
+        "description": "getPublicKey - Invalid PublicKeyFileName",
+        "publicKeyFileName": "cert/alpha/invalidFileName.pem",
+        "errorTest": true,
+        "exceptionType": {
+            "default": "",
+            "c#net5": "FileNotFoundException",
+            "c#": "FileNotFoundException"
+        },
+        "expectedResult": {
+            "default": "",
+            "golang": "Unable to open file invalidFileName.pem",
+            "nodejs": "ENOENT: no such file or directory, open '%s'",
+            "java": "src/main/resources/test-suites/cert/alpha/invalidFileName.pem (No such file or directory)",
+            "c#": "Could not find file \"cert/alpha/invalidFileName.pem\"",
+            "c#net5": "Could not find file 'cert/alpha/invalidFileName.pem'."
+        }
+    },
+
+
+    {
+        "id": "11",
+        "description": "getPrivateKey - from PKCS#1 (RSA) Encrypted",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.encrypted.pem",
+            "passphrase": "passwordkey",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "skipTest": [
+            "c#net5"
+        ],
+        "expectedResult": {
+            "c#net5": "c#net5 does not support encrypted PKCS#1 (RSA) key type",
+
+            "default": "true"
+        }
+    },
+    {
+        "id": "12",
+        "description": "getPrivateKey - from PKCS#1 (RSA)",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "13",
+        "description": "getPrivateKey - from PKCS#8 Encrypted",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.encrypted.pem",
+            "passphrase": "passwordkey",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "14",
+        "description": "getPrivateKey - from PKCS#8",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "15",
+        "description": "getPrivateKey - from Keystore P12/PFX Encrypted",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/keystore.alpha.pkcs12.encrypted.p12",
+            "passphrase": "p12password",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "skipTest": [
+            "nodejs"
+        ],
+        "expectedResult": {
+            "nodejs": "p12 file type not supported for nodejs",
+
+            "default": "true"
+        }
+    },
+    {
+        "id": "16",
+        "description": "getPrivateKey - from Keystore P12/PFX",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/keystore.alpha.pkcs12.nopass.p12",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "skipTest": [
+            "nodejs"
+        ],
+        "expectedResult": {
+            "nodejs": "p12 file type not supported for nodejs",
+
+            "default": "true"
+        }
+    },
+    {
+        "id": "17",
+        "remarks": "not applicable to nodejs as it read the file as text",
+        "description": "getPrivateKey - PKCS#1 (RSA) - without passphrase but access with passphrase",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.nopass.pem",
+            "passphrase": "invalid"
+        },
+        "skipTest": [
+            "nodejs",
+            "c#"
+        ],
+        "errorTest": true,
+        "exceptionType": {
+            "default": "",
+            "c#net5": "ArgumentException",
+            "c#": "ArgumentException"
+        },
+        "expectedResult": {
+            "nodejs": "not applicable, nodejs read input file as text",
+            "c#": "not applicable, c# will not trigger any error. Positive c# test in 17.1",
+
+            "default": "",
+            "c#net5": "No supported key formats were found. Check that the input represents the contents of a PEM-encoded key file, not the path to such a file. (Parameter 'input')"
+        }
+    },
+    {
+        "id": "17.1",
+        "description": "getPrivateKey - PKCS#1 (RSA) - without passphrase but access with passphrase",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs1.nopass.pem",
+            "passphrase": "invalid",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "skipTest": [
+            "nodejs",
+            "c#net5"
+        ],
+        "expectedResult": {
+            "nodejs": "not applicable, nodejs read input file as text",
+            "c#net5": "not applicable for c#net5",
+
+            "default": "true"
+        }
+    },
+    {
+        "id": "18",
+        "remarks": "not applicable to nodejs as it read the file as text",
+        "description": "getPrivateKey - PKCS#8 Encrypted - invalid passphrase",
+
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.encrypted.pem",
+            "passphrase": "invalid"
+        },
+        "skipTest": [
+            "nodejs"
+        ],
+        "errorTest": true,
+        "exceptionType": {
+            "default": "",
+            "c#net5": "CryptographicException",
+            "c#": "PemException"
+        },
+        "expectedResult": {
+            "nodejs": "not applicable, nodejs read input file as text",
+
+            "default": "",
+            "c#net5": "The EncryptedPrivateKeyInfo structure was decoded but was not successfully interpreted, the password may be incorrect.",
+            "c#":"problem creating ENCRYPTED private key: Org.BouncyCastle.Crypto.InvalidCipherTextException: pad block corrupted\n  at Org.BouncyCastle.Crypto.Paddings.Pkcs7Padding.PadCount (System.Byte[] input) [0x0001e] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.Paddings.PaddedBufferedBlockCipher.DoFinal (System.Byte[] output, System.Int32 outOff) [0x000cc] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.BufferedBlockCipher.DoFinal (System.Byte[] input, System.Int32 inOff, System.Int32 inLen) [0x0003a] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal (System.Byte[] input) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Pkcs.PrivateKeyInfoFactory.CreatePrivateKeyInfo (System.Char[] passPhrase, System.Boolean wrongPkcs12Zero, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00044] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Pkcs.PrivateKeyInfoFactory.CreatePrivateKeyInfo (System.Char[] passPhrase, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.Security.PrivateKeyFactory.DecryptKey (System.Char[] passPhrase, Org.BouncyCastle.Asn1.Pkcs.EncryptedPrivateKeyInfo encInfo) [0x00000] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 \n  at Org.BouncyCastle.OpenSsl.PemReader.ReadPrivateKey (Org.BouncyCastle.Utilities.IO.Pem.PemObject pemObject) [0x00348] in <99ebf4e4edf2417da8c72c52b152f7dc>:0 "
+        }
+    },
+    {
+        "id": "19",
+        "remarks": "not applicable to nodejs as it read the file as text",
+        "description": "getPrivateKey - Public Certificate provided",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/cert.alpha.x509.bin.cer"
+        },
+        "skipTest": [
+            "nodejs"
+        ],
+        "errorTest": true,
+        "exceptionType": {
+            "default": "",
+            "c#net5": "CryptographicException",
+            "c#": "CryptographicException"
+        },
+        "expectedResult": {
+            "nodejs": "not applicable, nodejs read input file as text",
+
+            "default": "No supported key formats were found. Check that the file format are supported.",
+            "c#net5": "No supported key formats were found. Check that the file format are supported."
+        }
+    },
+    {
+        "id": "20",
+        "remarks": "not applicable to nodejs as it read the file as text",
+        "description": "getPrivateKey - Public Key provided",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/publickey.alpha.key"
+        },
+        "skipTest": [
+            "nodejs"
+        ],
+        "errorTest": true,
+        "exceptionType": {
+            "default": "",
+            "c#net5": "CryptographicException",
+            "c#": "InvalidCastException"
+        },
+        "expectedResult": {
+            "nodejs": "not applicable, nodejs read input file as text",
+
+            "default": "",
+            "c#net5": "No supported key formats were found. Check that the file format are supported.",
+            "c#": "Specified cast is not valid."
+        }
+    },
+
+
+
+    {
+        "id": "21",
+        "description": "getPublicKey - X509 Certificate in PEM Format",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.pem.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "22",
+        "description": "getPublicKey - X509 Certificate in DER Format",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/cert.alpha.x509.bin.cer",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "skipTest": [
+            "nodejs"
+        ],
+        "expectedResult": {
+            "nodejs": "der file type not supported for nodejs",
+
+            "default": "true"
+        }
+    },
+    {
+        "id": "23",
+        "description": "getPublicKey - Public Key in PEM Format",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/publickey.alpha.key",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "expectedResult": {
+            "default": "true"
+        }
+    },
+    {
+        "id": "24",
+        "description": "getPublicKey - from Keystore P12/PFX Encrypted",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/keystore.alpha.pkcs12.encrypted.p12",
+        "passphrase": "p12password",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "skipTest": [
+            "nodejs"
+        ],
+        "expectedResult": {
+            "nodejs": "p12 file type not supported for nodejs",
+
+            "default": "true"
+        }
+    },
+    {
+        "id": "25",
+        "description": "getPublicKey - from Keystore P12/PFX",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/keystore.alpha.pkcs12.nopass.p12",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "skipTest": [
+            "nodejs"
+        ],
+        "expectedResult": {
+            "nodejs": "p12 file type not supported for nodejs",
+
+            "default": "true"
+        }
+    },
+    {
+        "id": "26",
+        "description": "getPublicKey - get Public Key from Private Key",
+        "message": "message",
+        "publicKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+        "apiParam": {
+            "privateKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+            "signature": "BYTzB10qy1u0lNTi2CKpn5TfakyKcm4b7q9w3hMkhoupGLklB15N8mNCDxGQrnuPGc0CktLjBEk2+csJ0GLzo/J+p+FuluhMPXn2RvX6GWFhu5RY4d4VzLIy369FyWlu+a4OX5QKJCJ5Lr70TZ82GFW4nYCnqLQa1jLAqtzldLCHprN3Nd1gPP01a/E3N2I70l+q/M8mWdZlJoSI148waSPy+RHbSuRF+23BQ/jKCRrG63TAZAMzuT2prCEXuMFmWZBRPPYVJ1wQvdoot7M99n8o0/1oq5G/Q/pWNi7N6saz9FrF594j+qGi9Sj4PUjvg3FMf2mYj4e2UX0EqTqT9g=="
+        },
+        "skipTest": [
+            "c#"
+        ],
+        "expectedResult": {
+            "c#": "not applicable - c# can't get public key from private key pem, error test in 26.1",
+
+            "default": "true"
+        }
+    },
+    {
+        "id": "26.1",
+        "description": "getPublicKey - get Public Key from Private Key",
+        "publicKeyFileName": "cert/alpha/key.alpha.pkcs8.nopass.pem",
+        "skipTest": [
+            "nodejs",
+            "c#net5"
+        ],
+        "errorTest": true,
+        "exceptionType": {
+            "default": "",
+            "c#": "CryptographicException"
+        },
+        "expectedResult": {
+            "nodejs": "nodejs does not support getting public key from private key file",
+            "c#net5": "not applicable - c#net5 does not trigger error",
+
+            "default": "",
+            "c#": "Missing Exponent"
+        }
+    }
+]
